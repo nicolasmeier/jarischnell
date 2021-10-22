@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/nicolasmeier/jarischnell/actions/workflows/node.js.yml/badge.svg)](https://github.com/nicolasmeier/jarischnell/actions/workflows/node.js.yml)
+
 # jarischnell
 Unser Team:
 
