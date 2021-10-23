@@ -5,14 +5,14 @@
         <div className="md:flex bg-gray-200 rounded-xl p-8 md:p-0">
         <img
             className="w-32 h-32 my-6 md:w-80 md:h-auto md:rounded-none rounded-full mx-64"
-            src="https://cdn.icon-icons.com/icons2/1465/PNG/512/303familymanwomanboyboy1_100514.png"
+            src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80"
             alt=""
             width="884"
             height="512"
           />
-          <div className="md:p-0 text-left my-6 ">
+          <div className="md:p-0 text-left my-2">
             <blockquote>
-              <p className="text-base">
+              <p className="text-base p-4">
                 <h3>Infos</h3>
                     <p className="text-gray-400">_________________</p>
                     <div className="text-gray-600">
@@ -28,21 +28,21 @@
         </div>
 
 
-        <div className="pt-4">
+        <div className="pt-2">
             <div className="bg-gray-200 rounded-xl p-4"> 
                 <h3 className="text-left">Badges</h3>
                 <p className="text-gray-400">_________________</p>
                 <div className="pt-2">
                     <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
-                        <button class="px-4"title="You solved your very 1st challenge">😜</button>
+                        <button class="px-4"title="You solved your very 1st challenge">🆒</button>
                         <button class="px-4"title="You are an alien">👽</button>
                         <button class="px-4"title="You shared your 1st tipp">👾</button>
                         <button class="px-4"title="You earned a badge">🎃</button>
                         <button class="px-4"title="Challenge #1">🧜🏻‍♀️</button>
                         <button class="px-4"title="Challenge #1">🚵🏽</button>
-                        <button class="px-4"title="Challenge #1">🔥</button>
-                        <button class="px-4"title="Challenge #1">👨‍🌾</button>
-                        <button class="px-4"title="Challenge #1">👩‍🍳</button>
+                        <button class="px-4"title="Challenge #1">🐱‍🐉</button>
+                        <button class="px-4"title="Challenge #1">🍄</button>
+                        <button class="px-4"title="Challenge #1">🤓</button>
                         <button class="px-4"title="Challenge #1">🙉</button>
                         <button class="px-4"title="Challenge #1">🌈</button>
                         <button class="px-4"title="Challenge #1">🔥</button>
@@ -54,7 +54,7 @@
             </div>
         </div>
         
-        <div className="pt-4">
+        <div className="pt-2">
             <div className="bg-gray-200 rounded-xl p-4"> 
                 <h3 className="text-left">Tipps</h3>
                 <p className="text-gray-400">_________________</p>
