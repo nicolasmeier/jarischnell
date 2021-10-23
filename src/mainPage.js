@@ -6,12 +6,13 @@ import { BrowserRouter, Redirect, Link, Route, Switch } from "react-router-dom";
 import Statistics from "./statistics";
 import Challenges from "./challenges";
 import Profile from "./profilePage";
+import Social from "./social";
 
 const user = {
   name: "Jari Schnell",
   email: "jari@schnell.com",
   imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    "https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80",
 };
 let navigation = [
   { name: "Statistics", href: "#", current: true },
@@ -112,7 +113,7 @@ export default function MainPage() {
                           <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                             <span className="sr-only">Open user menu</span>
                             <img
-                              className="h-8 w-8 rounded-full"
+                              className="h-8 w-8 rounded-full object-cover"
                               src={user.imageUrl}
                               alt=""
                             />
@@ -258,12 +259,12 @@ export default function MainPage() {
           <Route path="/Social">
             <header className="bg-white shadow">
               <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-bold text-gray-900">Social</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Feed</h1>
               </div>
             </header>
             <main>
               <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                <Statistics></Statistics>
+                <Social></Social>
               </div>
             </main>
           </Route>
