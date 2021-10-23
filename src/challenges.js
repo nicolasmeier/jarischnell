@@ -7,16 +7,28 @@ const challengesJson = [
     duration: "1 week",
     badgeURI:
       "https://media3.giphy.com/media/j5iIjX5RP8GVzT1FqQ/giphy.gif?cid=790b7611339b1bebcf3fda268fb5e28a83b27e6af159dfd0&rid=giphy.gif&ct=g",
+    accepted: false,
   },
   {
     title: "Laundry at night",
     description:
-      "Profit from cheaper electricity prices by doing your laundry at night.",
-    categorie: "Household",
+      "Profit from cheaper electricity prices by doing your laundry at night!",
+    categorie: "Washing machine",
     difficulty: "Middle",
     duration: "1 week",
     badgeURI:
       "https://media3.giphy.com/media/a1kftfCMBOa0o/giphy.webp?cid=ecf05e476ylxq2f08jqxmthj87p9al2wxf51a73xigz532bl&rid=giphy.webp&ct=g",
+    accepted: false,
+  },
+  {
+    title: "Minimize lights",
+    description: "Always turn off the lights wenn leaving a room!",
+    categorie: "Lights",
+    difficulty: "Hard",
+    duration: "1 month",
+    badgeURI:
+      "https://media4.giphy.com/media/l2JebisijdzVL2Cqs/200.webp?cid=ecf05e47kxrhlkv8i1wqrlolpdyfgcblffic0jfpg59hn31i&rid=200.webp&ct=g",
+    accepted: false,
   },
   {
     title: "Turn off Router",
@@ -26,17 +38,13 @@ const challengesJson = [
     duration: "1 week",
     badgeURI:
       "https://media3.giphy.com/media/j5iIjX5RP8GVzT1FqQ/giphy.gif?cid=790b7611339b1bebcf3fda268fb5e28a83b27e6af159dfd0&rid=giphy.gif&ct=g",
-  },
-  {
-    title: "Turn off Router",
-    description: "Safe energy by turning off your router over night!",
-    categorie: "Electronics",
-    difficulty: "Easy",
-    duration: "1 week",
-    badgeURI:
-      "https://media3.giphy.com/media/j5iIjX5RP8GVzT1FqQ/giphy.gif?cid=790b7611339b1bebcf3fda268fb5e28a83b27e6af159dfd0&rid=giphy.gif&ct=g",
+    accepted: false,
   },
 ];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Challenges() {
   return (
@@ -111,18 +119,32 @@ export default function Challenges() {
                         {challenge.categorie}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {challenge.difficulty}
+
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span
+                        className={classNames(
+                          "px-2 inline-flex text-xs leading-5 font-semibold rounded-full",
+                          challenge.difficulty == "Easy"
+                            ? "bg-green-100 text-green-800"
+                            : challenge.difficulty == "Middle"
+                            ? "bg-yellow-100 text-yellow-800"
+                            : "bg-red-100 text-red-800"
+                        )}
+                      >
+                        {challenge.difficulty}
+                      </span>
                     </td>
+
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {challenge.duration}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                             
-                        <button href="#" className="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-sm rounded-lg focus:border-4 border-indigo-300">
-                            Accept
-                          </button>
-                       
+                      <button
+                        onClick=""
+                        className="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-sm rounded-lg focus:border-4 border-indigo-300"
+                      >
+                        Accept
+                      </button>
                     </td>
                   </tr>
                 ))}
