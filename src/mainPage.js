@@ -1,30 +1,31 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import Statistics from './statistics';
-import Challenges from './challenges';
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { BrowserRouter, Redirect, Link, Route, Switch } from "react-router-dom";
+import Statistics from "./statistics";
+import Challenges from "./challenges";
+import Profile from "./profilePage";
 
 const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
+  name: "Jari Schnell",
+  email: "jari@schnell.com",
   imageUrl:
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
+    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+};
 let navigation = [
-  { name: 'Statistics', href: '#', current: true },
-  { name: 'Challenges', href: '#', current: false },
-  { name: 'Social', href: '#', current: false },
-]
+  { name: "Statistics", href: "#", current: true },
+  { name: "Challenges", href: "#", current: false },
+  { name: "Social", href: "#", current: false },
+];
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
-]
+  { name: "Your Profile", href: "#" },
+  { name: "Settings", href: "#" },
+  { name: "Sign out", href: "#" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function MainPage() {
@@ -54,31 +55,44 @@ export default function MainPage() {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                      <Link to="/Statistics"
-                          className={classNames('text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                        <Link
+                          to="/Statistics"
+                          className={classNames(
+                            "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "px-3 py-2 rounded-md text-sm font-medium"
                           )}
-                          onClick={() => {navigation[0].current = true}}
-                        >{navigation[0].name}
-                      </Link>
-                      <Link to="/Challenges"
-                          className={classNames('text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                          onClick={() => {
+                            navigation[0].current = true;
+                          }}
+                        >
+                          {navigation[0].name}
+                        </Link>
+                        <Link
+                          to="/Challenges"
+                          className={classNames(
+                            "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "px-3 py-2 rounded-md text-sm font-medium"
                           )}
-                          onClick={() => {navigation[1].current = true}}
-                        >{navigation[1].name}
-                      </Link>
-                      <Link to="/Social"
+                          onClick={() => {
+                            navigation[1].current = true;
+                          }}
+                        >
+                          {navigation[1].name}
+                        </Link>
+                        <Link
+                          to="/Social"
                           className={classNames(
                             navigation[2].current
-                              ? 'bg-gray-900 text-white'
-                              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                              ? "bg-gray-900 text-white"
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            "px-3 py-2 rounded-md text-sm font-medium"
                           )}
-                          onClick={() => {navigation[2].current = true}}
-                        >{navigation[2].name}
-                      </Link>
-                      
+                          onClick={() => {
+                            navigation[2].current = true;
+                          }}
+                        >
+                          {navigation[2].name}
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -97,7 +111,11 @@ export default function MainPage() {
                         <div>
                           <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img
+                              className="h-8 w-8 rounded-full"
+                              src={user.imageUrl}
+                              alt=""
+                            />
                           </Menu.Button>
                         </div>
                         <Transition
@@ -114,10 +132,10 @@ export default function MainPage() {
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
                                   <a
-                                    href={item.href}
+                                    href="/Profil"
                                     className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
+                                      active ? "bg-gray-100" : "",
+                                      "block px-4 py-2 text-sm text-gray-700"
                                     )}
                                   >
                                     {item.name}
@@ -137,7 +155,10 @@ export default function MainPage() {
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
-                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                        <MenuIcon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       )}
                     </Disclosure.Button>
                   </div>
@@ -152,10 +173,12 @@ export default function MainPage() {
                       as="a"
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block px-3 py-2 rounded-md text-base font-medium'
+                        item.current
+                          ? "bg-gray-900 text-white"
+                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        "block px-3 py-2 rounded-md text-base font-medium"
                       )}
-                      aria-current={item.current ? 'page' : undefined}
+                      aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </Disclosure.Button>
@@ -164,11 +187,19 @@ export default function MainPage() {
                 <div className="pt-4 pb-3 border-t border-gray-700">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
-                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src={user.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                      <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                      <div className="text-base font-medium leading-none text-white">
+                        {user.name}
+                      </div>
+                      <div className="text-sm font-medium leading-none text-gray-400">
+                        {user.email}
+                      </div>
                     </div>
                     <button
                       type="button"
@@ -197,46 +228,59 @@ export default function MainPage() {
         </Disclosure>
 
         <Switch>
+        <Route exact path="/">
+            <Redirect to="/Statistics" />
+        </Route>
           <Route path="/Statistics">
-          <header className="bg-white shadow">
-          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-gray-900">Statistics</h1>
-          </div>
-        </header>
-        <main>
-          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <Statistics></Statistics>
-          </div>
-        </main>
+            <header className="bg-white shadow">
+              <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold text-gray-900">Statistics</h1>
+              </div>
+            </header>
+            <main>
+              <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <Statistics></Statistics>
+              </div>
+            </main>
           </Route>
           <Route path="/Challenges">
-          <header className="bg-white shadow">
-          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-gray-900">Challenges</h1>
-          </div>
-        </header>
-        <main>
-          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <Challenges></Challenges>
-          </div>
-        </main>
+            <header className="bg-white shadow">
+              <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold text-gray-900">Challenges</h1>
+              </div>
+            </header>
+            <main>
+              <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <Challenges></Challenges>
+              </div>
+            </main>
           </Route>
           <Route path="/Social">
-          <header className="bg-white shadow">
-          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-gray-900">Social</h1>
-          </div>
-        </header>
-        <main>
-          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <Statistics></Statistics>
-          </div>
-        </main>
+            <header className="bg-white shadow">
+              <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold text-gray-900">Social</h1>
+              </div>
+            </header>
+            <main>
+              <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <Statistics></Statistics>
+              </div>
+            </main>
+          </Route>
+          <Route path="/Profil">
+            <header className="bg-white shadow">
+              <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <h1 className="text-3xl font-bold text-gray-900">Profil</h1>
+              </div>
+            </header>
+            <main>
+              <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <Profile></Profile>
+              </div>
+            </main>
           </Route>
         </Switch>
-
-
       </div>
     </>
-  )
+  );
 }
