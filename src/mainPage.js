@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import Statistics from './statistics';
+import Challenges from './challenges';
 
 const user = {
   name: 'Tom Cook',
@@ -216,7 +217,7 @@ export default function MainPage() {
         </header>
         <main>
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <Statistics></Statistics>
+            <Challenges></Challenges>
           </div>
         </main>
           </Route>
