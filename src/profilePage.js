@@ -42,12 +42,12 @@
                         <button class="px-4"title="Challenge #1">🚵🏽</button>
                         <button class="px-4"title="Challenge #1">🐱‍🐉</button>
                         <button class="px-4"title="Challenge #1">🍄</button>
-                        <button class="px-4"title="Challenge #1">🤓</button>
-                        <button class="px-4"title="Challenge #1">🙉</button>
-                        <button class="px-4"title="Challenge #1">🌈</button>
-                        <button class="px-4"title="Challenge #1">🔥</button>
+                        <button class="px-4"title="Reduce Electricity by 10%">🤓</button>
+                        <button class="px-4"title="Laundry at night">🙉</button>
+                        <button class="px-4"title="">🌈</button>
+                        <button class="px-4"title="Minimize lights">🔥</button>
                         <button class="px-4"title="Challenge #1">🐛</button>
-                        <button class="px-4"title="Challenge #1">🐋</button>
+                        <button class="px-4"title="Turn off Router">🐋</button>
                         <button class="px-4"title="Challenge #1">🐱‍🚀</button>
                     </div>
                 </div>

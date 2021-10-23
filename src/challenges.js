@@ -8,10 +8,9 @@ var challengesJson = [
     categorie: "Electronics",
     difficulty: "Easy",
     duration: "1 week",
-    badgeURI:
-      "https://media3.giphy.com/media/j5iIjX5RP8GVzT1FqQ/giphy.gif?cid=790b7611339b1bebcf3fda268fb5e28a83b27e6af159dfd0&rid=giphy.gif&ct=g",
     badge: "🐋",
     active: false,
+    timestamp: Date.now()
   },
   {
     index: 1,
@@ -21,9 +20,7 @@ var challengesJson = [
     categorie: "Washing machine",
     difficulty: "Middle",
     duration: "1 week",
-    badgeURI:
-      "https://media3.giphy.com/media/a1kftfCMBOa0o/giphy.webp?cid=ecf05e476ylxq2f08jqxmthj87p9al2wxf51a73xigz532bl&rid=giphy.webp&ct=g",
-    badge: "🙉",
+   badge: "🙉",
     active: false,
   },
   {
@@ -33,21 +30,17 @@ var challengesJson = [
     categorie: "Lights",
     difficulty: "Hard",
     duration: "1 month",
-    badgeURI:
-      "https://media4.giphy.com/media/l2JebisijdzVL2Cqs/200.webp?cid=ecf05e47kxrhlkv8i1wqrlolpdyfgcblffic0jfpg59hn31i&rid=200.webp&ct=g",
-    badge: "🔥",
+    badge: "🌈",
     active: false,
   },
   {
     index: 3,
-    title: "Turn off Router",
-    description: "Safe energy by turning off your router over night!",
-    categorie: "Electronics",
+    title: "Reduce heating",
+    description: "Save energy by reducing the heating by half!",
+    categorie: "Heating",
     difficulty: "Easy",
     duration: "1 week",
-    badgeURI:
-      "https://media3.giphy.com/media/j5iIjX5RP8GVzT1FqQ/giphy.gif?cid=790b7611339b1bebcf3fda268fb5e28a83b27e6af159dfd0&rid=giphy.gif&ct=g",
-    badge: "🌈",
+    badge: "🔥",
     active: false,
   },
 ];
@@ -119,7 +112,14 @@ function ChallengeElement(challenge) {
 export default function Challenges() {
   var temp = localStorage.getItem("challenges");
   if (temp != null) {
-    challengesJson = JSON.parse(temp);
+    temp = JSON.parse(temp);
+    console.log(temp[0].timestamp+900000-Date.now())
+   if(temp[0].timestamp===undefined || temp[0].timestamp +900000 < Date.now()){
+       //Clear localstorage after 15 minutes
+    localStorage.removeItem('challenges');
+   } else{
+    challengesJson = temp
+   }
   }
 
   return (
