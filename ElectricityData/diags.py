@@ -15,7 +15,6 @@ dfG = pd.read_csv(path+"Objekt G.CSV")
 dfH = pd.read_csv(path+"Objekt H.CSV")
 
 print()
-#quit()
 
 
 dates = []
