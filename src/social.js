@@ -2,7 +2,7 @@
 const people = [
   {
     name: 'Jane Cooper',
-    title: 'Jane liked your idea you posted',
+    title: 'Jane liked the idea you posted',
     department: 'Optimization',
     role: 'Admin',
     cat: 'Tips/Ideas',
@@ -11,19 +11,19 @@ const people = [
   },
   {
     name: 'Timbo Bart',
-    title: 'Timbo just got the Challenge "0-Energy Reduction 🐱‍🐉" done',
+    title: 'Timbo just achieved the milestone "10% Energy Reduction 🐱‍🐉" done',
     department: 'Optimization',
     role: 'Admin',
-    cat: 'Challenge',
+    cat: 'Milestone',
     image:
       'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80',
   },
   {
     name: 'Jeani Alfert',
-    title: 'Jari Schnell just got the Challenge "0-Energy Reduction -> 🐱‍🏍" done',
+    title: 'Jeani just achieved the milestone "20% Energy Reduction -> 🐱‍🏍" done',
     department: 'Optimization',
     role: 'Admin',
-    cat: 'Challenge',
+    cat: 'Milestone',
     image:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
   },
