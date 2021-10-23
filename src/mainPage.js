@@ -11,12 +11,10 @@ const user = {
   imageUrl:
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
-const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+let navigation = [
+  { name: 'Statistics', href: '#', current: true },
+  { name: 'Challenges', href: '#', current: false },
+  { name: 'Social', href: '#', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -28,7 +26,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function MainPage() {
   return (
     <>
       {/*
@@ -55,7 +53,31 @@ export default function Example() {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                        <Link to="/Team">Team</Link>
+                      <Link to="/Statistics"
+                          className={classNames('text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          onClick={() => {navigation[0].current = true}}
+                        >{navigation[0].name}
+                      </Link>
+                      <Link to="/Challenges"
+                          className={classNames('text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          onClick={() => {navigation[1].current = true}}
+                        >{navigation[1].name}
+                      </Link>
+                      <Link to="/Social"
+                          className={classNames(
+                            navigation[2].current
+                              ? 'bg-gray-900 text-white'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          onClick={() => {navigation[2].current = true}}
+                        >{navigation[2].name}
+                      </Link>
+                      
                       </div>
                     </div>
                   </div>
@@ -173,31 +195,46 @@ export default function Example() {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow">
+        <Switch>
+          <Route path="/Statistics">
+          <header className="bg-white shadow">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Statistics</h1>
           </div>
         </header>
-
-
         <main>
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            {/* Replace with your content */}
-            <div>hello</div>
-            <Switch>
-              <Route path="/Team">
-                <Statistics />
-              </Route>
-              <Route path="/Projects">
-                <div>Projects</div>
-              </Route>
-            </Switch>
-            <div className="px-4 py-6 sm:px-0">
-              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
-            </div>
-            {/* /End replace */}
+            <Statistics></Statistics>
           </div>
         </main>
+          </Route>
+          <Route path="/Challenges">
+          <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Challenges</h1>
+          </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <Statistics></Statistics>
+          </div>
+        </main>
+          </Route>
+          <Route path="/Social">
+          <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Social</h1>
+          </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <Statistics></Statistics>
+          </div>
+        </main>
+          </Route>
+        </Switch>
+
+
       </div>
     </>
   )
