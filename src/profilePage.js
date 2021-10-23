@@ -2,9 +2,9 @@
   export default function Profile() {
     return (
       <div className="container mx-auto">
-        <div className="md:flex bg-gray-100 p-8 md:p-0">
+        <div className="md:flex bg-gray-200">
         <img
-            className="w-32 h-32 my-6 md:w-80 md:h-auto md:rounded-none rounded-full mx-64"
+            className=" my-20 h-40 w-40 object-cover md:rounded-none rounded-full mx-64"
             src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80"
             alt=""
             width="884"
@@ -37,6 +37,9 @@
                         <button class="px-4"title="You solved your very 1st challenge">🆒</button>
                         <button class="px-4"title="You are an alien">👽</button>
                         <button class="px-4"title="You shared your 1st tipp">👾</button>
+                        <button class="px-4"title="You did your laundry at night to save energy">🙉</button>
+                        <button class="px-4"title="You turned off your router more frequently">🌈</button>
+                        <button class="px-4"title="You minimized your light use">🔥</button>
                         <button class="px-4"title="You earned a badge">🎃</button>
                         <button class="px-4"title="Challenge #1">🧜🏻‍♀️</button>
                         <button class="px-4"title="Challenge #1">🚵🏽</button>

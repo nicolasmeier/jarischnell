@@ -6,6 +6,7 @@ import { BrowserRouter, Redirect, Link, Route, Switch } from "react-router-dom";
 import Statistics from "./statistics";
 import Challenges from "./challenges";
 import Profile from "./profilePage";
+import Social from "./social";
 
 const user = {
   name: "Jari Schnell",
@@ -46,12 +47,8 @@ export default function MainPage() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                        alt="Workflow"
-                      />
+                    <div className="flex-shrink-0 text-5xl">
+                      🐱‍🏍
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
@@ -112,7 +109,7 @@ export default function MainPage() {
                           <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                             <span className="sr-only">Open user menu</span>
                             <img
-                              className="h-8 w-8 rounded-full"
+                              className="h-8 w-8 rounded-full object-cover"
                               src={user.imageUrl}
                               alt=""
                             />
@@ -258,12 +255,12 @@ export default function MainPage() {
           <Route path="/Social">
             <header className="bg-white shadow">
               <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-bold text-gray-900">Social</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Feed</h1>
               </div>
             </header>
             <main>
               <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                <Statistics></Statistics>
+                <Social></Social>
               </div>
             </main>
           </Route>
