@@ -16,7 +16,6 @@ dfH = pd.read_csv(path+"Objekt H.CSV")
 
 print()
 
-
 dates = []
 daily = []
 dailyB = []
