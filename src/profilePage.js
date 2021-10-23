@@ -47,7 +47,7 @@
                         <button class="px-4"title="Magic mushroom">🍄</button>
                         <button class="px-4"title="Reduce Electricity by 10%">🤓</button>
                         <button class="px-4"title="Laundry at night">🙉</button>
-                        <button class="px-4"title="">🌈</button>
+                        <button class="px-4"title="Reduce heating">🌈</button>
                         <button class="px-4"title="Minimize lights">🔥</button>
                         <button class="px-4"title="Green with red head">🐛</button>
                         <button class="px-4"title="Turn off Router">🐋</button>
