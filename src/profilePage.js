@@ -33,12 +33,24 @@
                 <h3 className="text-left">Badges</h3>
                 <p className="text-gray-400">_________________</p>
                 <div className="pt-2">
-                        <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
-                            😜     👽     👾     🎃     🧜🏻‍♀️     🏄🏽     🚵🏽     🔥     🌪     🌈     🏃‍♀️    🐛 
-
-                                👨‍🎨     👨‍🌾    👩‍🍳     🙉    🐋 
-                        </div>
+                    <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
+                        <button class="px-4"title="You solved your very 1st challenge">😜</button>
+                        <button class="px-4"title="You are an alien">👽</button>
+                        <button class="px-4"title="You shared your 1st tipp">👾</button>
+                        <button class="px-4"title="You earned a badge">🎃</button>
+                        <button class="px-4"title="Challenge #1">🧜🏻‍♀️</button>
+                        <button class="px-4"title="Challenge #1">🚵🏽</button>
+                        <button class="px-4"title="Challenge #1">🔥</button>
+                        <button class="px-4"title="Challenge #1">👨‍🌾</button>
+                        <button class="px-4"title="Challenge #1">👩‍🍳</button>
+                        <button class="px-4"title="Challenge #1">🙉</button>
+                        <button class="px-4"title="Challenge #1">🌈</button>
+                        <button class="px-4"title="Challenge #1">🔥</button>
+                        <button class="px-4"title="Challenge #1">🐛</button>
+                        <button class="px-4"title="Challenge #1">🐋</button>
+                        <button class="px-4"title="Challenge #1">🐱‍🚀</button>
                     </div>
+                </div>
             </div>
         </div>
         
@@ -75,7 +87,12 @@
                         </div>
                     </div>
 
-
+                    <div className="pt-4">
+                        <div className="bg-gray-100 rounded-xl md:p-4">
+                            <p className="text-gray-500 text-xs">Teile weitere Tipps mit deinen Nachbarn:</p>
+                            <input class="focus:ring-blue-300 px-2 my-2"></input>
+                        </div>  
+                    </div>  
                 </div>
             </div>
 
