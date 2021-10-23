@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 path = "ElectricityData/csv/"
-pathpic = "ElectricityData/png/"
+pathpic = "ElectricityData/png/Blind-"
 
 df = pd.read_csv(path+"Objekt A.CSV")
 dfB = pd.read_csv(path+"Objekt B.CSV")
