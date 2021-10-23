@@ -6,27 +6,7 @@ const options = {
       y: {
         beginAtZero: true,
       },
-      yAxes: [
-        {
-          beginAtZero: true,
-          type: 'linear',
-          display: true,
-          position: 'left',
-          id: 'y-axis-1',
-          gridLines: {
-            drawOnArea: false,
-          },
-        },
-        {
-          type: 'linear',
-          display: false,
-          position: 'right',
-          id: 'y-axis-2',
-          gridLines: {
-            drawOnArea: false,
-          },
-        },
-      ],
+      
     },
   };
 
