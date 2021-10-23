@@ -2,14 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("Objekt A.CSV")
-dfB = pd.read_csv("Objekt B.CSV")
-dfC = pd.read_csv("Objekt C.CSV")
-dfD = pd.read_csv("Objekt D.CSV")
-dfE = pd.read_csv("Objekt E.CSV")
-dfF = pd.read_csv("Objekt F.CSV")
-dfG = pd.read_csv("Objekt G.CSV")
-dfH = pd.read_csv("Objekt H.CSV")
+path = "ElectricityData/csv/"
+pathpic = "ElectricityData/png/"
+
+df = pd.read_csv(path+"Objekt A.CSV")
+dfB = pd.read_csv(path+"Objekt B.CSV")
+dfC = pd.read_csv(path+"Objekt C.CSV")
+dfD = pd.read_csv(path+"Objekt D.CSV")
+dfE = pd.read_csv(path+"Objekt E.CSV")
+dfF = pd.read_csv(path+"Objekt F.CSV")
+dfG = pd.read_csv(path+"Objekt G.CSV")
+dfH = pd.read_csv(path+"Objekt H.CSV")
 
 print()
 #quit()
@@ -62,5 +65,38 @@ plt.plot(dates,dailyG,label="G")
 plt.plot(dates,dailyH,label="H")
 plt.legend()
 #print(data_wirk)
-plt.savefig('HousesYear.png')
+plt.savefig(pathpic+'HousesYear.png')
 plt.show()
+
+plt.plot(dates,daily)
+plt.savefig(pathpic+'AYear.png')
+plt.show()
+
+plt.plot(dates,dailyB)
+plt.savefig(pathpic+'BYear.png')
+plt.show()
+
+plt.plot(dates,dailyC)
+plt.savefig(pathpic+'CYear.png')
+plt.show()
+
+plt.plot(dates,dailyD)
+plt.savefig(pathpic+'DYear.png')
+plt.show()
+
+plt.plot(dates,dailyE)
+plt.savefig(pathpic+'EYear.png')
+plt.show()
+
+plt.plot(dates,dailyF)
+plt.savefig(pathpic+'FYear.png')
+plt.show()
+
+plt.plot(dates,dailyG)
+plt.savefig(pathpic+'GYear.png')
+plt.show()
+
+plt.plot(dates,dailyH)
+plt.savefig(pathpic+'HYear.png')
+plt.show()
+
