@@ -25,35 +25,61 @@
             </blockquote>
           </div>      
         </div>
-        <div className=""> 
-            <h3 className="text-left pt-12">Batches</h3>
-            <p className="text-gray-400">_________________</p>
-            <div className="text-3xl pt-6"> 
-                😜     👽     👾     🎃     🧜🏻‍♀️     🏄🏽     🚵🏽     🔥     🌪     🌈     🏃‍♀️    🐛 
 
-                    👨‍🎨     👨‍🌾    👩‍🍳     🙉    🐋 
+
+        <div className="pt-4">
+            <div className="bg-gray-200 rounded-xl p-4"> 
+                <h3 className="text-left">Badges</h3>
+                <p className="text-gray-400">_________________</p>
+                <div className="pt-2">
+                        <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
+                            😜     👽     👾     🎃     🧜🏻‍♀️     🏄🏽     🚵🏽     🔥     🌪     🌈     🏃‍♀️    🐛 
+
+                                👨‍🎨     👨‍🌾    👩‍🍳     🙉    🐋 
+                        </div>
+                    </div>
             </div>
         </div>
+        
+        <div className="pt-4">
+            <div className="bg-gray-200 rounded-xl p-4"> 
+                <h3 className="text-left">Tipps</h3>
+                <p className="text-gray-400">_________________</p>
+                <div className="text-3xl"> 
+                    <div className="pt-2">
+                        <div className="bg-gray-100 rounded-xl md:p-4"> 
+                            <p className="text-gray-500 text-xs">23/10/2021 </p>
+                            <p className="text-blue-300 text-base">
+                                Wir hätten nicht gedacht, dass das Ausschalten unseres Wlans nachts so viel zur Energiereduktion beiträgt. Somit haben wir letztens den 🐋 - Batch erhalten! Probiert es doch auch aus. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div className="pt-2">
+                        <div className="bg-gray-100 rounded-xl md:p-4">
+                            <p className="text-gray-500 text-xs">02/09/2021 </p>
+                            <p className="text-blue-300 text-base">
+                                Haushalt jarischnell ist auf Solarenergie umgestiegen ! 🔥
+                            </p>
+                        </div>
+                    </div>
+            
 
-        <div className=""> 
-            <h3 className="text-left pt-12">Tipps</h3>
-            <p className="text-gray-400">_________________</p>
-            <div className="text-3xl pt-6"> 
-                <p className="text-gray-400 text-xs">23/10/2021 </p>
-                <p className="text-blue-300 text-base">
-                    Wir hätten nicht gedacht, dass das Ausschalten unseres Wlans nachts so viel zur Energiereduktion beiträgt. Somit haben wir letztens den 🐋 - Batch erhalten! Probiert es doch auch aus. 
-                </p>
-                <p className="text-gray-400 text-xs pt-6">02/09/2021 </p>
-                <p className="text-blue-300 text-base">
-                    Haushalt jarischnell ist auf Solarenergie umgestiegen ! 🔥
-                </p>
-                <p className="text-gray-400 text-xs pt-6">27/08/2021 </p>
-                <p className="text-blue-300 text-base">
-                    Habt ihr gewusst, dass so viele Geräte nachts auf Stand-by sind und mehr Energie verbrauchen, als uns bewusst ist?
-                </p>
+                    <div className="pt-2">
+                        <div className="bg-gray-100 rounded-xl md:p-4">
+                            <p className="text-gray-500 text-xs">27/08/2021 </p>
+                            <p className="text-blue-300 text-base">
+                                Habt ihr gewusst, dass so viele Geräte nachts auf Stand-by sind und mehr Energie verbrauchen, als uns bewusst ist?
+                            </p>
+                        </div>
+                    </div>
 
+
+                </div>
             </div>
+
         </div>
+        
       </div>
     );
   }
