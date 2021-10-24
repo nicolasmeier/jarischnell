@@ -34,24 +34,24 @@
                 <p className="text-gray-400">_________________</p>
                 <div className="pt-2">
                     <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
+                        <button class="px-4"title="You liked your first idea">💗</button>
+                        <button class="px-4"title="You earned a badge">🎃</button>
                         <button class="px-4"title="You solved your very 1st challenge">🆒</button>
-                        <button class="px-4"title="You are an alien">👽</button>
                         <button class="px-4"title="You shared your 1st tipp">👾</button>
                         <button class="px-4"title="You did your laundry at night to save energy">🙉</button>
                         <button class="px-4"title="You turned off your router more frequently">🌈</button>
                         <button class="px-4"title="You minimized your light use">🔥</button>
-                        <button class="px-4"title="You earned a badge">🎃</button>
                         <button class="px-4"title="Welcome to the mermaid challenge">🧜🏻‍♀️</button>
                         <button class="px-4"title="You used your bycicle instead of your car today">🚵🏽</button>
                         <button class="px-4"title="Ninja cat on dragon">🐱‍🐉</button>
                         <button class="px-4"title="Magic mushroom">🍄</button>
-                        <button class="px-4"title="Reduce Electricity by 10%">🤓</button>
-                        <button class="px-4"title="Laundry at night">🙉</button>
+                        <button class="px-4"title="Reduce Electricity by 10%">🤓</button>                        
                         <button class="px-4"title="Reduce heating">🌈</button>
                         <button class="px-4"title="Minimize lights">🔥</button>
                         <button class="px-4"title="Green with red head">🐛</button>
                         <button class="px-4"title="Turn off Router">🐋</button>
                         <button class="px-4"title="Ninja Cat Astronaut">🐱‍🚀</button>
+                        <button class="px-4"title="You are an alien">👽</button>
                     </div>
                 </div>
             </div>
