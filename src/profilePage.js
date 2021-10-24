@@ -43,7 +43,7 @@
                         <button class="p-4"title="You minimized your light use">🔥</button>
                         <button class="p-4"title="Welcome to the mermaid challenge">🧜🏻‍♀️</button>
                         <button class="p-4"title="You used your bycicle instead of your car today">🚵🏽</button>
-                        <button class="p-4"title="Ninja cat on dragon">🐱‍🐉</button>
+                        <button class="p-4"title="You didn't use your oven for a week">🍰</button>
                         <button class="p-4"title="Magic mushroom">🍄</button>
                         <button class="p-4"title="Reduce electricity by 10%">🤓</button>                        
                         <button class="p-4"title="Reduce heating">🌈</button>
