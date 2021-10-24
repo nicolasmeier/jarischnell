@@ -18,7 +18,7 @@ var challengesJson = [
     title: "Laundry at Night",
     description: "Do your laundry at night with cheaper electricity!",
     categorie: "Washing Machine",
-    difficulty: "Middle",
+    difficulty: "Medium",
     duration: "1 week",
     savingGoal: "5.1%",
     badge: "🙉",
@@ -111,7 +111,7 @@ function ChallengeElement(challenge) {
             "px-2 inline-flex text-xs leading-5 font-semibold rounded-full",
             challenge.difficulty === "Easy"
               ? "bg-green-100 text-green-800"
-              : challenge.difficulty === "Middle"
+              : challenge.difficulty === "Medium"
               ? "bg-yellow-100 text-yellow-800"
               : "bg-red-100 text-red-800"
           )}
@@ -173,7 +173,7 @@ function pastChallengeElement(challenge) {
             "px-2 inline-flex text-xs leading-5 font-semibold rounded-full",
             challenge.difficulty === "Easy"
               ? "bg-green-100 text-green-800"
-              : challenge.difficulty === "Middle"
+              : challenge.difficulty === "Medium"
               ? "bg-yellow-100 text-yellow-800"
               : "bg-red-100 text-red-800"
           )}
