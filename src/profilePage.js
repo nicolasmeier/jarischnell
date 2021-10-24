@@ -1,4 +1,3 @@
-
   export default function Profile() {
     return (
       <div className="container mx-auto">
@@ -26,7 +25,6 @@
             </blockquote>
           </div>      
         </div>
-
 
         <div className="pt-2">
             <div className="bg-gray-200 p-4"> 
