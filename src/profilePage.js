@@ -17,10 +17,10 @@
                     <p className="text-gray-400">_________________</p>
                     <div className="text-gray-600">
                         <li>Name <p className="text-blue-300">Jari Schnell </p></li>  
-                        <li>Wohnform <p className="text-blue-300">WG </p></li>
-                        <li>Zimmer <p className="text-blue-300">5.5 </p></li>
-                        <li>Anzahl Personen<p className="text-blue-300">4 </p></li>
-                        <li>Energieformen<p className="text-blue-300">Solar</p></li>
+                        <li>Living Situation <p className="text-blue-300">Shared Flat </p></li>
+                        <li>Rooms <p className="text-blue-300">5.5 </p></li>
+                        <li>Number of People<p className="text-blue-300">4 </p></li>
+                        <li>Energy Sources<p className="text-blue-300">Solar</p></li>
                     </div>              
               </p>
             </blockquote>
@@ -34,24 +34,24 @@
                 <p className="text-gray-400">_________________</p>
                 <div className="pt-2">
                     <div className="text-3xl p-6 bg-gray-100 rounded-xl md:p-2"> 
-                        <button class="px-4"title="You liked your first idea">💗</button>
-                        <button class="px-4"title="You earned a badge">🎃</button>
-                        <button class="px-4"title="You solved your very 1st challenge">🆒</button>
-                        <button class="px-4"title="You shared your 1st tipp">👾</button>
-                        <button class="px-4"title="You did your laundry at night to save energy">🙉</button>
-                        <button class="px-4"title="You turned off your router more frequently">🌈</button>
-                        <button class="px-4"title="You minimized your light use">🔥</button>
-                        <button class="px-4"title="Welcome to the mermaid challenge">🧜🏻‍♀️</button>
-                        <button class="px-4"title="You used your bycicle instead of your car today">🚵🏽</button>
-                        <button class="px-4"title="Ninja cat on dragon">🐱‍🐉</button>
-                        <button class="px-4"title="Magic mushroom">🍄</button>
-                        <button class="px-4"title="Reduce Electricity by 10%">🤓</button>                        
-                        <button class="px-4"title="Reduce heating">🌈</button>
-                        <button class="px-4"title="Minimize lights">🔥</button>
-                        <button class="px-4"title="Green with red head">🐛</button>
-                        <button class="px-4"title="Turn off Router">🐋</button>
-                        <button class="px-4"title="Ninja Cat Astronaut">🐱‍🚀</button>
-                        <button class="px-4"title="You are an alien">👽</button>
+                        <button class="p-4"title="You liked your first idea">💗</button>
+                        <button class="p-4"title="You earned a badge">🎃</button>
+                        <button class="p-4"title="You solved your very 1st challenge">🆒</button>
+                        <button class="p-4"title="You shared your 1st tipp">👾</button>
+                        <button class="p-4"title="You did your laundry at night to save energy">🙉</button>
+                        <button class="p-4"title="You turned off your router more frequently">🌈</button>
+                        <button class="p-4"title="You minimized your light use">🔥</button>
+                        <button class="p-4"title="Welcome to the mermaid challenge">🧜🏻‍♀️</button>
+                        <button class="p-4"title="You used your bycicle instead of your car today">🚵🏽</button>
+                        <button class="p-4"title="Ninja cat on dragon">🐱‍🐉</button>
+                        <button class="p-4"title="Magic mushroom">🍄</button>
+                        <button class="p-4"title="Reduce electricity by 10%">🤓</button>                        
+                        <button class="p-4"title="Reduce heating">🌈</button>
+                        <button class="p-4"title="Minimize lights">🔥</button>
+                        <button class="p-4"title="Green with red head">🐛</button>
+                        <button class="p-4"title="Turn off Router">🐋</button>
+                        <button class="p-4"title="Ninja cat astronaut">🐱‍🚀</button>
+                        <button class="p-4"title="You are an alien">👽</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                         <div className="bg-gray-100 rounded-xl md:p-4"> 
                             <p className="text-gray-500 text-xs">23/10/2021 </p>
                             <p className="text-blue-300 text-base">
-                                Wir hätten nicht gedacht, dass das Ausschalten unseres WLans nachts so viel zur Energiereduktion beiträgt. Somit haben wir letztens den 🐋 - Batch erhalten! Probiert es doch auch aus. 
+                                We were not aware that turning off your router at night would make such a difference. We earned the 🐋 - badge by reducing our energy consumption.
                             </p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         <div className="bg-gray-100 rounded-xl md:p-4">
                             <p className="text-gray-500 text-xs">02/09/2021 </p>
                             <p className="text-blue-300 text-base">
-                                Haushalt Jari Schnell ist auf Solarenergie umgestiegen ! 🔥
+                                Jari Schnell flat changed to solar energy!
                             </p>
                         </div>
                     </div>
@@ -85,14 +85,14 @@
                         <div className="bg-gray-100 rounded-xl md:p-4">
                             <p className="text-gray-500 text-xs">27/08/2021 </p>
                             <p className="text-blue-300 text-base">
-                                Habt ihr gewusst, dass so viele Geräte nachts auf Stand-by sind und mehr Energie verbrauchen, als uns bewusst ist?
+                                Did you know that many devices that are on stand-by at night consume more energy than we thought?
                             </p>
                         </div>
                     </div>
 
                     <div className="pt-4">
                         <div className="bg-gray-100 rounded-xl md:p-4">
-                            <p className="text-gray-500 text-xs">Teile weitere Tipps mit deinen Nachbarn:</p>
+                            <p className="text-gray-500 text-xs">Share more useful tipps to your neighbours:</p>
                             <input class="focus:ring-blue-300 px-2 my-2"></input>
                         </div>  
                     </div>  
